@@ -3,13 +3,44 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legion of Sparta - 300 Page</title>
     <link rel="stylesheet" href="assets/css/main.css" />
 
     <style>
-        /* Style for Viber link button */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Responsive Layout */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Responsive YouTube Video */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Viber Link Button */
         .viber-link {
             display: inline-block;
             padding: 10px 20px;
@@ -17,38 +48,18 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
-            font-family: Arial, sans-serif;
             margin-top: 10px;
         }
         .viber-link:hover {
             background-color: #4A498D;
         }
 
-        /* Style for Random Number Wheel */
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
+        /* Random Number Generator Wheel */
         #wheel {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            border: 5px solid #333;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #wheelCanvas {
-            transform-origin: center;
-            transition: transform 3s ease-out;
-        }
-        #result {
-            margin-top: 20px;
-            font-size: 24px;
-            font-weight: bold;
+            width: 90%;
+            max-width: 300px;
+            height: auto;
+            margin: 0 auto;
         }
         button {
             padding: 10px 20px;
@@ -62,199 +73,87 @@
             background-color: #45a049;
         }
 
-        /* Responsive YouTube Video */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
-            max-width: 100%;
-            background: #000;
+        /* Responsive Navigation */
+        #nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #nav ul li {
+            margin: 5px;
+        }
+        #nav ul li a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+        }
+        #nav ul li a:hover {
+            background: #555;
         }
 
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        /* Responsive Images */
+        .image.featured img {
             width: 100%;
-            height: 100%;
-            border: 0;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            #nav ul {
+                flex-direction: column;
+            }
+            #nav ul li {
+                width: 100%;
+                text-align: center;
+            }
         }
     </style>
 </head>
-<body class="is-preload">
+<body>
+    <div class="container">
+        <h2>Welcome to [300] Legion of Sparta clan website</h2>
+        <h3>Total Battle K151</h3>
+        <h3>New: Troop stacking tutorial using <a href="https://apps.tbfba.wiki/" target="_blank">Troop Calculator</a></h3>
 
-    <div id="content">
-        <div class="inner">
-            <!-- Post -->
-            <article class="box post post-excerpt">
-                <header>
-                    <h2><a href="#">Welcome to [300] Legion of Sparta clan website</a></h2>
-                    <h3>Total Battle K151</h3>
-                </header>
-                <header>
-                    <h3>New: Troop stacking tutorial using <a href="https://apps.tbfba.wiki/" target="_blank">Troop Calculator on Youtube</a></h3>
-                </header>
-                <p>
-                    To see your total troop leadership here: <br>
-                    <a href="details.html" class="image featured">
-                        <img src="images/leadership.jpg" alt="Leadership chart" />
-                    </a>
-                </p>
-                <p>
-                    Our dear friend BIGZ has a YouTube channel with lots of tutorials, but here he explains how to use the <b>Troop Calculator</b>:
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4nY5zhlM7Jk?si=hwFTm3RBZlhDO5t9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </p>
-
-                <header>
-                    <h3>Citadel Training now on Youtube</h3>
-                </header>
-                <p>
-                    Watch the training session with <b>Grilahc</b> about how to kill citadels on YouTube here:
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/K3DN_2fjnT4?si=zRcfsAxkyo1J4aNN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </p>
-                <br>
-                <header>
-                    <h3>History</h3>
-                </header>
-                <p>
-                    In ancient Sparta, a select group of warriors known as the 300 stood as the ultimate symbols of strength, discipline, and bravery...
-                </p>
-                <br>
-                <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-            </article>
-
-            <!-- Post -->
-            <article class="box post post-excerpt">
-                <header>
-                    <h3>Our Clan rules</h3>
-                </header>
-                <p> As a member of 300, please follow our rules:
-                    <ol>
-                        <li>We expect you to be active and achieve a minimum of 200k might per week</li>
-                        <li>Deliver minimum 10 crypts <b>level 10 and higher</b> and 2 citadels to the clan per day</li>
-                        <li>Send resources / caravans to all clan buildings (read more in chat 300ReadOnly)</li>
-                        <li>Use clan speed ups daily whenever you see a clan process</li>
-                        <li>Teleport to the clan territory within 3 days, if you are a new member</li>
-                        <li>Always check your journal and the clan chat - and please participate.</li>
-                        <li>Notify superiors if you'll be absent for more than 3 days, otherwise you will be expelled</li>
-                        <li>Send all gold bars to the Kingdom</li>
-                        <li>Participate in clan tournaments and events</li>
-                        <li>Follow the RoE (Rules of Engagement). If you are not familiar with them - please read them carefully <a href="https://bit.ly/tb-k151" target="_blank">HERE</a></li>
-                    </ol>
-                </p>
-            </article>
-
-            <!-- Random Number Generator Wheel -->
-            <h1>Random Number Generator Wheel</h1>
-            <div id="wheel">
-                <canvas id="wheelCanvas" width="300" height="300"></canvas>
-            </div>
-            <button onclick="spinWheel()">Spin the Wheel!</button>
-            <div id="result">Result: </div>
-
-            <script>
-                const numSegments = 53;
-                const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#FFD700', '#33FFF6', '#8B00FF'];
-                let angles = [];
-                let arc = Math.PI / (numSegments / 2);
-                let spinAngle = 0;
-                let spinTimeout = null;
-                let ctx;
-                let spinCompleted = false;
-
-                function drawWheel() {
-                    let wheel = document.getElementById('wheelCanvas');
-                    ctx = wheel.getContext('2d');
-                    ctx.clearRect(0, 0, wheel.width, wheel.height);
-                    ctx.strokeStyle = 'black';
-                    ctx.lineWidth = 2;
-
-                    // Draw segments
-                    for (let i = 0; i < numSegments; i++) {
-                        let angle = spinAngle + arc * i;
-                        ctx.fillStyle = colors[i % colors.length];
-                        ctx.beginPath();
-                        ctx.arc(150, 150, 140, angle, angle + arc, false);
-                        ctx.lineTo(150, 150);
-                        ctx.fill();
-                        ctx.stroke();
-
-                        // Write numbers in segments
-                        ctx.fillStyle = '#FFFFFF';
-                        ctx.font = 'bold 20px Arial';
-                        ctx.fillText((i + 1).toString(), 150 + Math.cos(angle + arc / 2) * 100, 150 + Math.sin(angle + arc / 2) * 100);
-                    }
-                }
-
-                function spinWheel() {
-                    if (spinCompleted) return;
-                    let spinAngleStart = Math.random() * 10 + 10; 
-                    let spinTime = 0;
-
-                // Reset spinCompleted to allow new spins
-                    spinCompleted = false;
-                    let spinAngleDelta = spinAngleStart / 10; 
-                
-
-                    function rotateWheel() {
-                        spinTime += 30;
-                        if (spinTime >= 3600) {
-                            clearInterval(spinTimeout);
-                            spinCompleted = true;
-                            let finalAngle = Math.round((spinAngle % (2 * Math.PI)) / arc);
-                            finalAngle = finalAngle <= 0 ? numSegments : finalAngle;
-                            document.getElementById('result').innerText = `Result: ${finalAngle}`;
-                        } else {
-                            spinAngle += spinAngleStart / 10;
-                            drawWheel();
-                        }
-                    }
-
-                    spinTimeout = setInterval(rotateWheel, 30);
-                }
-
-                // Initial draw of the wheel
-                drawWheel();
-            </script>
-
-            <!-- Viber Information Section -->
-            <header>
-                <h3>Join Our Viber Community</h3>
-            </header>
-            <p>We have created a Viber community group [300] Legion of Sparta...</p>
-            <p>Use the short link below: <a href="https://t.ly/w7HdC" target="_blank">https://t.ly/w7HdC</a>.</p>
-            <a href="https://www.viber.com/" class="viber-link" target="_blank">Visit Viber Website</a>
+        <p>Our dear friend BIGZ explains how to use the <b>Troop Calculator</b>:</p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/4nY5zhlM7Jk" allowfullscreen></iframe>
         </div>
-    </div>
+        
+        <h3>Citadel Training now on Youtube</h3>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/K3DN_2fjnT4" allowfullscreen></iframe>
+        </div>
+        
+        <h3>History</h3>
+        <p>In ancient Sparta, a select group of warriors known as the 300...</p>
+        <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+        
+        <h3>Join Our Viber Community</h3>
+        <p>We have created a Viber community group [300] Legion of Sparta...</p>
+        <a href="https://www.viber.com/" class="viber-link" target="_blank">Visit Viber Website</a>
 
-    <div id="sidebar">
-        <h1 id="logo"><a href="#">300</a></h1>
-        <nav id="nav">
-            <ul>
-                <li><a href="https://tbgift.pages.dev/" target="_blank">Daily Gifts</a></li>
-                <li><a href="https://bit.ly/3Z9CaHl" target="_blank">Chest Data</a></li>
-                <li><a href="https://apps.tbfba.wiki/" target="_blank">Troop Calculator</a></li>
-                <li><a href="https://bit.ly/3XhxEUO" target="_blank">VP Calculator</a></li>
-            </ul>
-        </nav>
-        <section class="box text-style1">
-            <div class="inner">
-                <p>
-                    <a href="https://bit.ly/tb-k151" target="_blank"><strong>ROE of K151</strong></a>
-                </p>
-            </div>
-        </section>
-        <ul id="copyright">
-            <li>&copy; Hild</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <h1>Random Number Generator Wheel</h1>
+        <canvas id="wheelCanvas" width="300" height="300"></canvas>
+        <button onclick="spinWheel()">Spin the Wheel!</button>
+        <div id="result">Result: </div>
+    </div>
+    
+    <nav id="nav">
+        <ul>
+            <li><a href="https://tbgift.pages.dev/" target="_blank">Daily Gifts</a></li>
+            <li><a href="https://bit.ly/3Z9CaHl" target="_blank">Chest Data</a></li>
+            <li><a href="https://apps.tbfba.wiki/" target="_blank">Troop Calculator</a></li>
+            <li><a href="https://bit.ly/3XhxEUO" target="_blank">VP Calculator</a></li>
         </ul>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    </nav>
 </body>
 </html>
