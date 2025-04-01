@@ -192,6 +192,11 @@
                     let spinAngleStart = Math.random() * 10 + 10; 
                     let spinTime = 0;
 
+                // Reset spinCompleted to allow new spins
+                    spinCompleted = false;
+                    let spinAngleDelta = spinAngleStart / 10; 
+                
+
                     function rotateWheel() {
                         spinTime += 30;
                         if (spinTime >= 3600) {
