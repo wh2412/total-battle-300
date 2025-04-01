@@ -1,25 +1,36 @@
 <!DOCTYPE HTML>
-<html lang="en">
-<head>
+<!--
+    Striped by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Legion of Sparta - 300 page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>Legion of Sparta - 300 Page</title>
     <link rel="stylesheet" href="assets/css/main.css" />
-
+    
     <style>
-        body {
+        /* Style for Viber link button */
+        .viber-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #665CAC;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
+            margin-top: 10px;
+            
+        }
+        .image.featured img {
+        width: 50%; /* Adjust width */
+        height: auto; /* Maintain aspect ratio */
         }
 
-        /* Responsive Layout */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
+        .viber-link:hover {
+            background-color: #4A498D;
         }
 
         /* Responsive YouTube Video */
@@ -31,6 +42,7 @@
             max-width: 100%;
             background: #000;
         }
+
         .video-container iframe {
             position: absolute;
             top: 0;
@@ -39,121 +51,165 @@
             height: 100%;
             border: 0;
         }
-
-        /* Viber Link Button */
-        .viber-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #665CAC;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .viber-link:hover {
-            background-color: #4A498D;
-        }
-
-        /* Random Number Generator Wheel */
-        #wheel {
-            width: 90%;
-            max-width: 300px;
-            height: auto;
-            margin: 0 auto;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-
-        /* Responsive Navigation */
-        #nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        #nav ul li {
-            margin: 5px;
-        }
-        #nav ul li a {
-            text-decoration: none;
-            padding: 10px 15px;
-            background: #333;
-            color: white;
-            border-radius: 5px;
-        }
-        #nav ul li a:hover {
-            background: #555;
-        }
-
-        /* Responsive Images */
-        .image.featured img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                width: 100%;
-                padding: 10px;
-            }
-            #nav ul {
-                flex-direction: column;
-            }
-            #nav ul li {
-                width: 100%;
-                text-align: center;
-            }
-        }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h2>Welcome to [300] Legion of Sparta clan website</h2>
-        <h3>Total Battle K151</h3>
-        <h3>New: Troop stacking tutorial using <a href="https://apps.tbfba.wiki/" target="_blank">Troop Calculator</a></h3>
+    <body class="is-preload">
 
-        <p>Our dear friend BIGZ explains how to use the <b>Troop Calculator</b>:</p>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/4nY5zhlM7Jk" allowfullscreen></iframe>
-        </div>
-        
-        <h3>Citadel Training now on Youtube</h3>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/K3DN_2fjnT4" allowfullscreen></iframe>
-        </div>
-        
-        <h3>History</h3>
-        <p>In ancient Sparta, a select group of warriors known as the 300...</p>
-        <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-        
-        <h3>Join Our Viber Community</h3>
-        <p>We have created a Viber community group [300] Legion of Sparta...</p>
-        <a href="https://www.viber.com/" class="viber-link" target="_blank">Visit Viber Website</a>
+        <!-- Content -->
+            <div id="content">
+                <div class="inner">
 
-        <h1>Random Number Generator Wheel</h1>
-        <canvas id="wheelCanvas" width="300" height="300"></canvas>
-        <button onclick="spinWheel()">Spin the Wheel!</button>
-        <div id="result">Result: </div>
-    </div>
+                    <!-- Post -->
+                        <article class="box post post-excerpt">
+                            <header>
+                                <h2><a href="#">Welcome to [300] Legion of Sparta clan website</a></h2>
+                                <h3>Total Battle K151</h3>
+                            </header>
+                            
+                           <header>
+                                <h3>New: Troop stacking tutorial using <a href="https://apps.tbfba.wiki/" target="_blank"> Troop Calcualtor on Youtube </a></h3>
+                            </header>
+                           <p>
+    To see your total troop leadership here: <br>
+    <a href="details.html" class="image featured">
+        <img src="images/leadership.jpg" alt="Leadership chart" />
+    </a> 
+</p>
+                            <p>
+                               Our dear friend BIGZ has a Youtube channel with lots of tutorials, but here he explains how to use the <b>Troop Calculator</b>:
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/4nY5zhlM7Jk?si=hwFTm3RBZlhDO5t9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </p>
+                            <header>
+                                <h3>Citadel Training now on Youtube</h3>
+                            </header>
+                            <p>
+                               Watch the training session with <b>Grilahc</b> about how to kill citadels on Youtube here:
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/K3DN_2fjnT4?si=zRcfsAxkyo1J4aNN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </p>
+                            <br>
+                            <header>
+                                <h3>History</h3>
+                            </header>
+                            <p>
+                                In ancient Sparta, a select group of warriors known as the 300 stood as the ultimate symbols of strength, discipline, and bravery. 
+                                Handpicked by King Leonidas, these soldiers were chosen for their unmatched combat skills and deep loyalty to their homeland. <br><br>
+                                The story of the 300 has become a legendary testament to resistance and sacrifice. Their heroic stand at Thermopylae remains one of history's most defining moments, 
+                                embodying a tale of extraordinary valor that continues to inspire defenders of freedom to this day. 
+                                The legacy of the 300 endures as a powerful symbol of courage and unwavering determination.
+                            </p>
+                            <br>
+                            <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>  
+                        </article>
+
+                    <!-- Post -->
+                        <article class="box post post-excerpt">
+                            <header>
+                                <h3>Our Clan rules</h3>
     
-    <nav id="nav">
-        <ul>
-            <li><a href="https://tbgift.pages.dev/" target="_blank">Daily Gifts</a></li>
-            <li><a href="https://bit.ly/3Z9CaHl" target="_blank">Chest Data</a></li>
-            <li><a href="https://apps.tbfba.wiki/" target="_blank">Troop Calculator</a></li>
-            <li><a href="https://bit.ly/3XhxEUO" target="_blank">VP Calculator</a></li>
-        </ul>
-    </nav>
-</body>
+                            </header>
+                                                        
+                            <p> As a member of 300, please follow our rules:
+                            <ol>
+                                <li>We expect you to be active and achieve a minimum of 200k might per week</li>
+                                <li>Deliver minimum 10 crypts <b>level 10 and higher </b> and 2 citadels to the clan per day</li>
+                                <li>Send resources / caravans to the all clan buildings (read more in chat 300ReadOnly) </li>
+                                <li>Use clan speed ups daily whenever you see a clan process</li>
+                                <li>Teleport to the clan territory within 3 days, if you are a new member</li>
+                                <li>Always check your journal and the clan chat - and please participate. Respond to private messages from superiors</li>
+                                <li>Notify superiors if you'll be absent for more than 3 days, otherwise you will be expelled</li>
+                                <li>Send all gold bars to the Kingdom - you only need 10 for the daily jobs</li>
+                                <li>Participate in clan tournaments and events</li>
+                                <li>Follow the RoE (Rules of Engagement). If you are not familiar with them - please read them carefully <a href="https://bit.ly/tb-k151" target="_blank"> HERE </a></li>
+                                <li>We don't accept any attacks on cities in K151 outside the CoT</li>
+                                <li>Be polite and respectful</li>
+                                        
+                            </ol>
+                            </p>
+                        </article>
+                    <!-- Youtube Video -->
+                         <header>
+                                <h3>Watch the Youtube Video made by Strom to all of the Spartans of 300</h3>
+                            </header>
+                    <p>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/krcBqAW-5uc?si=fUuhKDCIomIPRHjs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </p>
+                        <!-- Viber Information Section -->
+                            <header>
+                                <h3>Join Our Viber Community</h3>
+                            </header>
+                            <p>
+                                We have created a Viber community group [300] Legion of Sparta. Viber is a messaging program like WhatsApp, but with a language translation tool. 
+                                You can download the Viber Rakuten app for free. Register your phone number. By using the invitation link you will be able to join our private community group. 
+                                The telephone numbers are not being shared. You will keep your privacy. You just see those telephone numbers you already have registered in your mobile phone. 
+                                We can share links, screenshots, gifs, send photos, if you like to. This is an invitation on a free will basis, which shall enhance our communication, 
+                                share strategies, Total Battle experience, and fun. :)
+                            </p>
+                            <p>
+                                Use the short link below: <a href="https://t.ly/w7HdC" target="_blank">https://t.ly/w7HdC</a>.
+                            </p>
+                            <p>
+                                **In short:**
+                                <ol>
+                                    <li>Download App Rakuten Viber</li>
+                                    <li>Register</li>
+                                    <li>Follow the link</li>
+                                </ol>
+                            </p>
+                            <p>
+                                **Technical Problems? Contact Grilahc.**  
+                                <br>See ya!
+                            </p>
+                            <a href="https://www.viber.com/" class="viber-link" target="_blank">Visit Viber Website</a>
+
+                </div>
+            </div>
+
+        <!-- Sidebar -->
+            <div id="sidebar">
+
+                <!-- Logo -->
+                    <h1 id="logo"><a href="#">300</a></h1>
+
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="https://tbgift.pages.dev/" target="_blank">Daily Gifts</a></li>
+                            <li><a href="https://bit.ly/3Z9CaHl" target="_blank">Chest Data</a></li>
+                            <li><a href="https://apps.tbfba.wiki/" target="_blank">Troop Calculator</a></li> 
+                            <li><a href="https://bit.ly/3XhxEUO" target="_blank">VP Calculator</a></li> 
+                        </ul>
+                    </nav>
+
+                <!-- Search -->
+                <!--
+                    <section class="box search">
+                        <form method="post" action="#">
+                            <input type="text" class="text" name="search" placeholder="Search" />
+                        </form>
+                    </section>
+
+                <!-- Text -->
+                    <section class="box text-style1">
+                        <div class="inner">
+                            <p>
+                                <a href="https://bit.ly/tb-k151" target="_blank"><strong>ROE of K151</strong></a>
+                            </p>
+                        </div>
+                    </section>
+
+                <!-- Copyright -->
+                    <ul id="copyright">
+                        <li>&copy; Hild</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
